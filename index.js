@@ -75,6 +75,15 @@ export default function HomePage() {
     }
   }
 
+  const lastBalance = async() => {
+    if(atm) {
+      let tx = await atm.lastBalance(1);
+      await tx.wait()
+      getBalance();
+    }
+  }
+
+
   const initUser = () => {
     // Check to see if user has Metamask
     if (!ethWallet) {
@@ -96,6 +105,7 @@ export default function HomePage() {
         <p>Your Balance: {balance}</p>
         <button onClick={deposit}>Deposit 1 ETH</button>
         <button onClick={withdraw}>Withdraw 1 ETH</button>
+        <button onClick={lastBalance}>Last_Balances</button>
       </div>
     )
   }
@@ -104,11 +114,12 @@ export default function HomePage() {
 
   return (
     <main className="container">
-      <header><h1>Welcome to the Metacrafters ATM!</h1></header>
+      <header><h1>Welcome to the My Metacrafters ATM!</h1></header>
       {initUser()}
       <style jsx>{`
         .container {
           text-align: center
+          background-color:pink
         }
       `}
       </style>
