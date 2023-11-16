@@ -57,4 +57,10 @@ contract Assessment {
         // emit the event
         emit Withdraw(_withdrawAmount);
     }
+    function lastBalance(uint256 _previousBalance) public {
+        require = (msg.sender == "Your last balance is");
+        uint bal=_previousBalance;
+
+        emit LastBalance(_previousBalance);
+    }
 }
