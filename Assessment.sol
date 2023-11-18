@@ -9,6 +9,7 @@ contract Assessment {
 
     event Deposit(uint256 amount);
     event Withdraw(uint256 amount);
+    event LastBalance(uint256 amount);
 
     constructor(uint initBalance) payable {
         owner = payable(msg.sender);
@@ -57,10 +58,12 @@ contract Assessment {
         // emit the event
         emit Withdraw(_withdrawAmount);
     }
-    function lastBalance(uint256 _previousBalance) public {
-        require = (msg.sender == "Your last balance is");
-        uint bal=_previousBalance;
 
-        emit LastBalance(_previousBalance);
+    function lastBalance(uint256 _lastbalance) public {
+        require(msg.sender == owner, "You are not the owner of this account");
+        uint _lastBalance = _previousBalance;
+
+        assert(_previousBalance == balance);
+        emit LastBalance(_lastbalance);
     }
 }
