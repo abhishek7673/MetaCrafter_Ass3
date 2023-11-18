@@ -165,22 +165,22 @@ export default function HomePage() {
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    height: 60vh;
-                    text-shadow: 3px 3px 2px rgba(186, 206, 179, 0.52);
-                    width: 60vh;
+                    height: 100vh;
+                    text-shadow: 4px 3px 1px rgba(200, 206, 189, 0.72);
+                    width: 100vh;
                     background-color: #ff0000;
                     color: green;
                     font-family: sans-serif;
-                    border-radius: 20px;
-                    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+                    border-radius: 1400px;
+                    box-shadow: rgba(1, 2, 3, 0.25) 1px 3px 5px, rgb(51, 51, 51) 1px 3px 5px 6px;
                 }
 
                 .centered-container {
                     text-align: center;
                     background-color: #00ffff;
-                    padding: 25px;
-                    border-radius: 15px;
-                    box-shadow: rgba(1, 1, 1, 0.24) 0px 4px 8px;
+                    padding: 30px;
+                    border-radius: 20px;
+                    box-shadow: rgba(4, 3, 6, 0.45) 3px 6px 20px;
                 }
 
 
