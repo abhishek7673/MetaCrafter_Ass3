@@ -10,6 +10,7 @@ export default function HomePage() {
 
     const [depositAmount, setDepositAmount] = useState(0);
     const [withdrawAmount, setWithdrawAmount] = useState(0);
+    const [LastBalance, setLastBalanceAmount] = useState(0);
 
     const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
     const atmABI = atm_abi.abi;
